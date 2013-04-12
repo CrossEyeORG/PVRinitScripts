@@ -8,8 +8,8 @@
 # Should-Stop:       $NetworkManager
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: starts instance of Sick Beard
-# Description:       starts instance of Sick Beard using start-stop-daemon
+# Short-Description: starts instance of SickBeard
+# Description:       starts instance of SickBeard using start-stop-daemon
 ### END INIT INFO
 
 # Script name

@@ -105,17 +105,7 @@ Make sure to edit the "USERNAME" in SickBeard, CouchPotato and Headphones script
 	</li>
 	<li>
 		<code>
-			sudo update-rc.d sickbeard defaults
-		</code>
-	</li>
-	<li>
-		<code>
 			sudo cp /opt/pvrinitscripts/CouchPotato.sh /etc/init.d/couchpotato
-		</code>
-	</li>
-	<li>
-		<code>
-			sudo chmod +x /etc/init.d/couchpotato
 		</code>
 	</li>
 	<li>
