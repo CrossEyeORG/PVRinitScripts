@@ -20,7 +20,7 @@ DESC=SickBeard
 
 ## The defaults
 # Run as username 
-RUN_AS=USERNAME
+RUN_AS=CHANGEME
 
 # Path to app SB_HOME=path_to_app_SickBeard.py
 APP_PATH=/opt/sickbeard
