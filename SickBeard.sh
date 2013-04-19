@@ -1,4 +1,4 @@
-﻿#!/bin/sh
+﻿#!/bin/bash
 #
 ### BEGIN INIT INFO
 # Provides:          sickbeard
@@ -35,7 +35,7 @@ PID_FILE=/var/run/sickbeard/sickbeard.pid
 DAEMON=/usr/bin/python
 
 # Extra daemon option like: SB_OPTS=" --config=/home/sickbeard/config.ini"
-EXTRA_DAEMON_OPTS= --config=/opt/sickbeard/config.ini
+EXTRA_DAEMON_OPTS=" --config=/opt/sickbeard/config.ini"
 
 # Extra start-stop-daemon option like START_OPTS=" --group=users"
 EXTRA_SSD_OPTS=

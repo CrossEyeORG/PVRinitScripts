@@ -1,4 +1,4 @@
-﻿#!/bin/sh
+﻿#!/bin/bash
 #
 ### BEGIN INIT INFO
 # Provides:          headphones
@@ -8,7 +8,7 @@
 # Should-Stop:       $NetworkManager
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# # Short-Description: starts instance of Headphones
+# Short-Description: starts instance of Headphones
 # Description:       starts instance of Headphones using start-stop-daemon
 ### END INIT INFO
 
@@ -34,15 +34,15 @@ PID_FILE=/var/run/headphones/headphones.pid
 # path to python bin
 DAEMON=/usr/bin/python
 
-# Extra daemon option like: SB_OPTS=" --config=/home/headphones/config.ini"
-EXTRA_DAEMON_OPTS= --config=/opt/headphones/config.ini
+# Extra daemon option like: HP_OPTS=" --config=/home/headphones/config.ini"
+EXTRA_DAEMON_OPTS=" --config=/opt/headphones/config.ini"
 
 # Extra start-stop-daemon option like START_OPTS=" --group=users"
 EXTRA_SSD_OPTS=
 ##
 
 PID_PATH=`dirname $PID_FILE`
-DAEMON_OPTS=" headphones.py --quiet --daemon --nolaunch --pidfile=${PID_FILE} --datadir=${DATA_DIR} ${EXTRA_DAEMON_OPTS}"
+DAEMON_OPTS=" Headphones.py --quiet --daemon --nolaunch --pidfile=${PID_FILE} --datadir=${DATA_DIR} ${EXTRA_DAEMON_OPTS}"
 
 ##
 

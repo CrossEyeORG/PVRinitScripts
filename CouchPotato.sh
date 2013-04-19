@@ -1,4 +1,4 @@
-﻿#!/bin/sh
+﻿#!/bin/bash
 #
 ### BEGIN INIT INFO
 # Provides:          couchpotato
@@ -8,7 +8,7 @@
 # Should-Stop:       $NetworkManager
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# # Short-Description: starts instance of CouchPotato
+# Short-Description: starts instance of CouchPotato
 # Description:       starts instance of CouchPotato using start-stop-daemon
 ### END INIT INFO
 
@@ -34,15 +34,15 @@ PID_FILE=/var/run/couchpotato/couchpotato.pid
 # path to python bin
 DAEMON=/usr/bin/python
 
-# Extra daemon option like: SB_OPTS=" --config=/home/couchpotato/config.ini"
-EXTRA_DAEMON_OPTS= --config=/opt/couchpotato/config.ini
+# Extra daemon option like: CP_OPTS=" --config=/home/couchpotato/config.ini"
+EXTRA_DAEMON_OPTS=" --config=/opt/couchpotato/config.ini"
 
 # Extra start-stop-daemon option like START_OPTS=" --group=users"
 EXTRA_SSD_OPTS=
 ##
 
 PID_PATH=`dirname $PID_FILE`
-DAEMON_OPTS=" couchpotato.py --daemon --pidfile=${PID_FILE} --datadir=${DATA_DIR} ${EXTRA_DAEMON_OPTS}"
+DAEMON_OPTS=" CouchPotato.py --daemon --pid_file=${PID_FILE} --data_dir=${DATA_DIR} ${EXTRA_DAEMON_OPTS}"
 
 ##
 
